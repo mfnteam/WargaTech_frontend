@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+    --color-orange-50: #fff7ed;
+    --color-orange-100: #ffedd5;
+    --color-orange-200: #fed7aa;
+    --color-orange-300: #fdba74;
+    --color-orange-400: #fb923c;
+    --color-orange-500: #f97316;
+    --color-orange-600: #ea580c;
+    --color-orange-700: #c2410c;
+    --color-orange-800: #9a3412;
+
+    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-900 font-sans antialiased min-h-screen selection:bg-orange-500 selection:text-white;
+    }
+}
+
+/* Custom animations */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 1.5s linear infinite;
+}
