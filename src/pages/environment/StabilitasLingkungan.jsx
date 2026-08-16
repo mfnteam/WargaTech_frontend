@@ -189,7 +189,7 @@ export default function StabilitasLingkungan() {
                         <h3 className="text-2xl font-black">
                             Mau Memilah Sampah Otomatis?
                         </h3>
-                        <h6 className="text-orange-100 text-sm">
+                        <h6 className="text-orange-100 text-md">
                             Dengan{" "}
                             <span className="text-gray-100 text-md fw-semibold">
                                 SampahinAja

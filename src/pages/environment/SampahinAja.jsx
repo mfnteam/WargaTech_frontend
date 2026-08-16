@@ -112,7 +112,7 @@ export default function SampahinAja() {
 
         try {
             const response = await axios.post(
-                "https://web-production-b822f5.up.railway.app/predict",
+                "https://sampahinaja-production.up.railway.app/predict",
                 formData,
                 { headers: { "Content-Type": "multipart/form-data" } },
             );

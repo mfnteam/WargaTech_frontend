@@ -299,7 +299,7 @@ function TrainTab({ isPetugas }) {
                                                     {t.code}
                                                 </h4>
                                             </div>
-                                            <p className="text-xs text-gray-500 font-medium max-w-[200px] truncate">
+                                            <p className="text-xs text-gray-500 font-medium max-w-[130px] truncate">
                                                 {t.direction}
                                             </p>
                                         </div>
