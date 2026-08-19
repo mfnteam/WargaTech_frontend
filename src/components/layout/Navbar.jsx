@@ -97,17 +97,6 @@ export default function Navbar() {
             {logoutModal && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
                     <div className="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl">
-                        {/* Header */}
-                        <div className="flex items-center justify-between px-6 pt-6">
-                            <button
-                                onClick={() => setLogoutModal(false)}
-                                className="rounded-full p-2 text-gray-400 transition hover:bg-gray-100 hover:text-gray-600"
-                            >
-                                X
-                            </button>
-                        </div>
-
-                        {/* Content */}
                         <div className="px-6 py-5">
                             <h2 className="text-xl font-bold text-gray-800">
                                 Keluar dari akun?
@@ -118,8 +107,6 @@ export default function Navbar() {
                                 perlu login kembali untuk mengakses akun ini.
                             </p>
                         </div>
-
-                        {/* Footer */}
                         <div className="flex gap-3 border-t border-gray-100 bg-gray-50 px-6 py-4">
                             <button
                                 onClick={() => setLogoutModal(false)}
