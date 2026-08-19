@@ -155,10 +155,10 @@ export default function Navbar() {
                             <img
                                 src={logoImg}
                                 alt="WargaTech Logo"
-                                className="h-12 w-auto transition-transform group-hover:scale-105"
+                                className="h-12 w-auto flex md:hidden lg:flex transition-transform group-hover:scale-105"
                             />
                             <span
-                                className={`text-2xl font-black tracking-tight transition-colors ${scrolled ? "text-gray-900" : "text-white drop-shadow-xs"}`}
+                                className={`text-2xl flex md:hidden xl:flex font-black tracking-tight transition-colors ${scrolled ? "text-gray-900" : "text-white drop-shadow-xs"}`}
                             >
                                 WargaTech
                             </span>
@@ -171,7 +171,7 @@ export default function Navbar() {
                                     to={link.to}
                                     end={link.to === "/"}
                                     className={({ isActive }) =>
-                                        `flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl transition-all duration-200 ${
+                                        `flex items-center gap-2 truncate px-4 py-2 text-sm font-semibold rounded-xl transition-all duration-200 ${
                                             isActive
                                                 ? "bg-orange-500 text-white shadow-sm font-bold"
                                                 : scrolled
@@ -190,7 +190,7 @@ export default function Navbar() {
                             {user ? (
                                 <>
                                     <span
-                                        className={`hidden md:inline-block px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider ${
+                                        className={`hidden lg:inline-block px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider ${
                                             isPetugas
                                                 ? "bg-blue-100 text-blue-700 border border-blue-200"
                                                 : "bg-orange-100 text-orange-700 border border-orange-200"
@@ -211,7 +211,7 @@ export default function Navbar() {
                                             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 text-white font-bold text-xs flex items-center justify-center shadow-xs">
                                                 {getInitials(user?.name)}
                                             </div>
-                                            <span className="hidden sm:inline-block text-sm font-semibold text-gray-800 max-w-[110px] truncate">
+                                            <span className="hidden lg:inline-block text-sm font-semibold text-gray-800 max-w-[110px] truncate">
                                                 {user?.name || "User"}
                                             </span>
                                             <ChevronDown
